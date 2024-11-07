@@ -65,7 +65,7 @@
         <label for="sum">Sum: </label>
         <input type="text" name="sum" id="vue-app-5-sum" :value="calSum" readonly>
     </div>
-
+    <hr>
     <div id="vue-app-6">
         <h1>Dynamic CSS</h1>
         <h2>Example 1</h2>
@@ -73,6 +73,25 @@
             <p>click me to see the change</p>
         </div>
     </div>
+    <hr>
+    <div id="vue-app-7">
+        <div style="padding: 10px; border: 1px solid black">
+            <p v-if="flag"> This is simple text 1 </p>
+        </div>
+        <br>
+        <div style="padding: 10px; border: 1px solid black">
+            <p v-show="!flag"> This is simple text 2 </p>
+        </div>
+        <br>
+        <div>
+            <button v-on:click="flag = !flag">Toggle</button>
+        </div>
+    </div>
+    <hr>
+
+
+
+
 
 
     <!-- JS scripts -->

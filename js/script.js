@@ -67,7 +67,6 @@ new Vue({
     },
 });
 
-
 new Vue({
     el: '#vue-app-5',
     data: {
@@ -90,5 +89,12 @@ new Vue({
         changeFlag: function() {
             this.flag = !this.flag;
         }
+    }
+});
+
+new Vue({
+    el: '#vue-app-7',
+    data: {
+        flag: true,
     }
 });
