@@ -9,9 +9,19 @@
 </head>
 <body>
     <div id="vue-app">
+        <!-- output data and run methods -->
         <p>{{ greet('Morning') }}</p>
         <h1>{{ name }}</h1>
         <h2>{{ job }}</h2>
+        
+        <!-- data binding in vue -->
+        <h3>
+            <a v-bind:href="website">My website</a> &nbsp
+            <a :href="website">My website</a> &nbsp
+            <span v-html="websiteTemplate"></span>
+        </h3>
+        <label for="myname">My name</label>
+        <input type="text" name="myname" id="" :value="name">
     </div>
 
     <!-- JS scripts -->
