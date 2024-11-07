@@ -66,6 +66,13 @@
         <input type="text" name="sum" id="vue-app-5-sum" :value="calSum" readonly>
     </div>
 
+    <div id="vue-app-6">
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+        <div v-bind:class="{ red: flag, green: !flag }" v-on:click="changeFlag()">
+            <p>click me to see the change</p>
+        </div>
+    </div>
 
 
     <!-- JS scripts -->

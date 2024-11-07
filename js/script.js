@@ -14,7 +14,6 @@ new Vue({
 
 });
 
-
 new Vue({
     el: '#vue-app-2',
     data: {
@@ -78,6 +77,18 @@ new Vue({
     computed: {
         calSum() {
             return this.a + this.b;
+        }
+    }
+});
+
+new Vue({
+    el: '#vue-app-6',
+    data: {
+        flag: true,
+    },
+    methods: {
+        changeFlag: function() {
+            this.flag = !this.flag;
         }
     }
 });
