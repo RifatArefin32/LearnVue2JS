@@ -23,6 +23,17 @@
         <label for="myname">My name</label>
         <input type="text" name="myname" id="" :value="name">
     </div>
+    <hr>
+    <div id="vue-app-2">
+        <h1>Event</h1>
+        <p>My age is <strong>{{ age }}</strong></p>
+        <!-- Vue action on events -->
+        <button v-on:click="age++">Add a year</button>
+        <button v-on:click="sub(1)">Subtract a year</button>
+        <button v-on:click="add()">Add using method</button>
+        <button v-on:click="sub(10)">Subtract using method</button>
+        <div id="canvus" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+    </div>
 
     <!-- JS scripts -->
     <script src="js/script.js"></script>
