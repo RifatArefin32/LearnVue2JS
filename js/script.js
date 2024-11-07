@@ -33,7 +33,9 @@ new Vue({
             console.log(event);
             this.x = event.offsetX;
             this.y = event.offsetY;
+        },
+        showAlert: function() {
+            alert('Are you sure?');
         }
-
     },
 });

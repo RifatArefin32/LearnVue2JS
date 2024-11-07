@@ -33,7 +33,9 @@
         <button v-on:click="add()">Add using method</button>
         <button v-on:click="sub(10)">Subtract using method</button>
         <div id="canvus" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+        <a href="http://www.facebook.com" v-on:click.stop="showAlert">Go Facebook</a>
     </div>
+    <hr>
 
     <!-- JS scripts -->
     <script src="js/script.js"></script>
