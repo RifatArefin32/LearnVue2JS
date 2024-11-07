@@ -96,5 +96,24 @@ new Vue({
     el: '#vue-app-7',
     data: {
         flag: true,
+        fruits: ['apple', 'banana', 'mango'],
+        students: [
+            {
+                name: 'Mr X',
+                roll: 1,
+                hall: 'BSMRH',
+            },
+            {
+                name: 'Mr Y',
+                roll: 2,
+                hall: 'KJAH',
+            },
+            {
+                name: 'Mr Z',
+                roll: 3,
+                hall: 'MARH',
+            }
+
+        ],
     }
 });

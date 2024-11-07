@@ -86,9 +86,21 @@
         <div>
             <button v-on:click="flag = !flag">Toggle</button>
         </div>
+        <div>
+            <h3>Fruits are: </h3>
+            <ul>
+                <li v-for="fruit in fruits"> {{fruit}} </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Students are: </h3>
+            <ul>
+                <li v-for="student, index in students"> {{index}}. {{student.name}} | {{student.roll}} | {{student.hall}} </li>
+            </ul>
+        </div>
     </div>
     <hr>
-
+    
 
 
 
