@@ -55,6 +55,16 @@
         <label for="email"> Email </label>
         <input type="text" name="email" id="vue-app-4-email" v-model="v4email">
     </div>
+    <hr>
+    <div id="vue-app-5">
+        <h1>Computer Properties</h1>
+        <label for="a"> A: </label>
+        <input type="text" name="a" id="vue-app-5-a" v-model.number="a">
+        <label for="b"> B: </label>
+        <input type="text" name="b" id="vue-app-5-b" v-model.number="b">
+        <label for="sum">Sum: </label>
+        <input type="text" name="sum" id="vue-app-5-sum" :value="calSum" readonly>
+    </div>
 
 
 

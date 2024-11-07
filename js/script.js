@@ -65,11 +65,19 @@ new Vue({
         v4email: '',
     },
     methods: {
-        v4name: function() {
-            console.log('dflsfn');
-        },
-        v4email: function() {
-            console.log('dflsfn');
-        },
     },
+});
+
+
+new Vue({
+    el: '#vue-app-5',
+    data: {
+        a: 0,
+        b: 0
+    },
+    computed: {
+        calSum() {
+            return this.a + this.b;
+        }
+    }
 });
