@@ -39,3 +39,21 @@ new Vue({
         }
     },
 });
+
+new Vue({
+    el: '#vue-app-3',
+    data: {
+        v3name: '',
+        v3email: '',
+    },
+    methods: {
+        name: function() {
+            this.v3name = document.getElementById('vue-app-3-name').value;
+            document.getElementById('name-message').innerText = 'You entered ' + this.v3name;
+        },
+        email: function() {
+            this.v3email = document.getElementById('vue-app-3-email').value;
+            document.getElementById('name-message').innerText = 'You entered ' + this.v3email;
+        }
+    }
+});

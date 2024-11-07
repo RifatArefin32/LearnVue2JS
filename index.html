@@ -36,7 +36,15 @@
         <a href="http://www.facebook.com" v-on:click.stop="showAlert">Go Facebook</a>
     </div>
     <hr>
-
+    <div id="vue-app-3">
+        <h1>Keyboard Event</h1>
+        <p id="name-message"></p>
+        <label for="name"> Name </label>
+        <input type="text" name="name" id="vue-app-3-name" v-on:keyup.enter="name">
+        <p id="name-email"></p>
+        <label for="email"> Email </label>
+        <input type="text" name="email" id="vue-app-3-email" v-on:keyup.enter="email">
+    </div>
     <!-- JS scripts -->
     <script src="js/script.js"></script>
 </body>
