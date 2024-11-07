@@ -57,3 +57,19 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: '#vue-app-4',
+    data: {
+        v4name: '',
+        v4email: '',
+    },
+    methods: {
+        v4name: function() {
+            console.log('dflsfn');
+        },
+        v4email: function() {
+            console.log('dflsfn');
+        },
+    },
+});
